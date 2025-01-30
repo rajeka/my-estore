@@ -1,0 +1,25 @@
+@import "../../style/scss/variables";
+@import "../../style/scss/mixins";
+
+.cat-nav-container {
+  width: 100% !important;
+  background-color: #000000;
+
+  .list-items {
+    list-style: none;
+    display: inline-block;
+    padding: 0.4em;
+    margin: 0.2em 1em;
+    height: 2.5em;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 0.9em;
+      height: 1.8em;
+      font-weight: 700;
+
+      @include underline-transition(1.1);
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import "../../style/scss/variables";
+@import "../../style/scss/mixins";
+
+.side-nav {
+  margin-top: 0.3em;
+  padding: 0.5em;
+  box-shadow: 1px 0px 14px 0px rgba(0, 0, 8, 0.2);
+  height: 97em;
+  width: 200px;
+  border-radius: 1em;
+
+  .section-title {
+    padding: 0.1em;
+
+    h3 {
+      // margin-top: 0px;
+      text-align: center;
+    }
+  }
+
+  .individual-category {
+    ul {
+      padding: 0;
+    }
+    .sub-items {
+      text-align: center;
+      list-style: none;
+      margin-bottom: 0.6em;
+      a {
+        text-decoration: none;
+        color: black;
+        @include underline-transition(0.4);
+      }
+    }
+  }
+}
